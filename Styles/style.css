@@ -4,6 +4,7 @@
  margin: 0;
  box-sizing: border-box;
  letter-spacing: 0.05em;
+ scroll-behavior: auto;
 }
 
 :root{
@@ -34,18 +35,31 @@ html{
    align-items: center;
    height: 3.2em;
    background-color: #CA2C92;
-   position: sticky;
+   position: fixed;
    top: 0;
-   z-index: 120;
+   right: 0;
+   left: 0;
+   z-index: 1;
 }
 
 .header__h2{
-   font-size: 1.5rem;
+   margin-bottom: 0.3em;
+   text-align: center;
+   font-size: 1.8em;
    letter-spacing: 0.1em;
+   font-family: sans-serif;
 }
 
 .header__h2 span{
-   color: gold;
+   font-size: 1.5em;
+   color: rgb(211, 113, 0);
+   font-family: sans-serif;
+}
+
+.header__h2 b{
+   color: rgb(74, 5, 184);
+   font-weight: 900;
+   font-size: 2.2rem;
 }
 
 .header__ul{
@@ -79,4 +93,106 @@ html{
 
 #Home{
    height: 107vh;
+   display: flex;
+}
+
+.home__intro{
+   flex-basis: 40%;
+   margin: 13em 6rem 0 8rem;
+   line-height: 1.5rem;
+   
+}
+
+.home__h4{
+   color: teal;
+   line-height: 2rem;
+   font-size: 1.5rem;
+   padding-bottom: 0.2em;
+}
+
+.home__h3{
+   color: #CA2C92;
+   font-size: 2em;
+   line-height: 2.4rem;
+   padding-bottom: 0.2em;
+}
+
+.profile_image{
+   margin-top: 6.5em;
+   border-radius: 11em;
+}
+
+/* ABOUT */
+
+#About{
+   height: 107vh;
+   display: flex;
+}
+
+.about__img{
+   margin-top: 10em;
+   margin-left: 12em;
+}
+
+.about__body{
+   flex-basis: 45%;
+   margin: 8em 4rem 0 6rem;
+   line-height: 1.5rem;
+}
+
+.about__h3{
+   color: teal;
+   font-size: 1.4rem;
+}
+
+
+.tab-titles {
+   display: flex;
+   margin: 1rem 0 1.5rem;
+}
+
+.tab-links {
+   margin-right: 5rem;
+   font-size: 1.1em;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+}
+
+.tab-links::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #ff004f;
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+   width: 50%;
+}
+
+.tab-contents ul li {
+   list-style: none;
+   margin: 1rem 0;
+}
+
+.tab-contents ul li span,
+.tab-contents ul li b{
+   color: rgb(203, 47, 96);
+   font-size: 1em;
+}
+
+.tab-contents ul li b{
+   letter-spacing: 1em;
+}
+
+.tab-contents {
+   display: none;
+}
+
+.tab-contents.active-tab {
+   display: block;
 }

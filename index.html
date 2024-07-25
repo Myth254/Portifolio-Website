@@ -5,10 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portfolio Website</title>
    <link rel="stylesheet" href="Styles/style.css">
+   <script src="https://kit.fontawesome.com/48ccc0d0be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header class="header">
-      <h2 class="header__h2">BENJAMIN<span>.</span></h2>
+   <header id="header" class="header">
+      <h2 class="header__h2"><b>B</b>enjamin<span>.</span></h2>
       <nav class="header__nav">
          <ul class="header__ul">
                <a href="#Home"><li>Home</li></a>
@@ -21,19 +22,44 @@
 
    <main>
       <article id="Home">
-         <h4>My name is Benjamin Korir</h4>
-         <h3>AN ASPIRING FULL STACK WEB DEVELOPER.</h3>
-         <div>Ut cupiditate quaerat et eos totam vero quibusdam quos doloremque optio non eveniet officia, quia repudiandae minima tempore doloribus asperiores dolore magnam.Mollitia blanditiis culpa Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum, maiores quis cumque eveniet commodi? Corrupti, nihil placeat.  </div>
-         <img class="profile_image" src="images/IMG_20231201_173555_Copy-removebg-preview (1).png" height="315rem">
+         <div class="home__intro">
+            <h4 class="home__h4">My name is Benjamin Korir</h4>
+            <h3 class="home__h3">AN ASPIRING FULL STACK WEB DEVELOPER.</h3>
+            <div>Ut cupiditate quaerat et eos totam vero quibusdam quos doloremque optio non eveniet officia, quia repudiandae minima tempore doloribus asperiores dolore magnam.Mollitia blanditiis culpa Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+         </div>
+         <img class="profile_image" src="images/IMG_20231201_173555_Copy-removebg-preview (1).png"
+         height="375rem">
       </article>
 
       <article id="About">
-         <img src="images/pixlr-image-generator-60e095df-cb4c-4317-9346-f8ff6d0866b6.png" alt="#" height="250rem">
-         <h3>ABOUT ME</h3>
-         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in perspiciatis facilis, provident voluptate iste id, animi aliquid dolores recusandae numquam eveniet repellendus est corrupti, possimus excepturi sint quidem at.
-            Atque dolorem aliquam consectetur iure, similique inventore doloremque sit nihil minima dignissimos dolore harum veniam quae! Fugit autem ad odio sed expedita perferendis? Id quae neque illo dolore, ad officiis!
-            Vero facere sequi autem qui dolore ducimus animi, cumque reiciendis perspiciatis tempore expedita excepturi aliquam ea laudantium? 
+         <img class="about__img" src="images/pixlr-image-generator-60e095df-cb4c-4317-9346-f8ff6d0866b6.png" alt="#" height="250rem">
+         <div class="about__body">
+            <h3 class="about__h3">ABOUT ME</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore in perspiciatis facilis, provident voluptate iste id, animi aliquid dolores recusandae numquam eveniet repellendus est corrupti, possimus excepturi sint quidem at.
+            </p>
+            
+            <div class="tab-titles">
+               <p class="tab-links" onclick="opentab('education')">Education</p>
+               <p class="tab-links" onclick="opentab('interests')">Interests</p>
+            </div>
+
+            <div class="tab-contents" id="education">
+               <ul>
+                  <li><span>2023 - Current</span><br>Bsc Computer Science - MKU</li>
+                  <li><span>2019 - 2022</span><br>Tenwek High school - KCSE</li>
+                  <li><span>2009 - 2018</span><br>Amazing Primary School - KCPE</li>
+               </ul>
+            </div>
+
+            <div class="tab-contents" id="interests">
+               <ul>
+                  <li><br><i class="fa-solid fa-diamond" style="color: #d80e4e;"></i> Web development<br></li>
+                  <li><br><i class="fa-solid fa-diamond" style="color: #d80e4e;"></i> Networking</li>
+                  <li><br><i class="fa-solid fa-diamond" style="color: #d80e4e;"></i> Ethical hacking</li>
+               </ul>
+            </div>
+
          </div>
       </article>
 
@@ -77,5 +103,27 @@
 
       </article>
    </footer>
+
+
+
+   <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+         for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+         for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+   </script>
+
+
 </body>
 </html>
