@@ -196,3 +196,50 @@ html{
 .tab-contents.active-tab {
    display: block;
 }
+
+/* SKILLS */
+
+#skills{
+   height: 107vh;
+}
+
+.skills__h4{
+   color: teal;
+   text-align: center;
+   font-size: 1.6rem;
+
+}
+
+.skills__list{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 4rem;
+   margin-top: 4rem;
+   align-items: center;
+   margin-left: 4rem;
+
+   justify-content: space-evenly;
+}
+
+.skills__section{
+   height: 18rem;
+   width: 18rem;
+   margin-bottom: ;
+   text-align: center;
+   background-color:#a70f71;
+   border-radius: 1.6rem;
+   word-wrap: none;
+}
+
+.html_css_js_img,
+.c_cpp_img,
+.linux_img{
+   height: 8em;
+}
+
+.skills__section__h4{
+   line-height: 1.6em;
+   color: rgb(129, 192, 192);
+}
+
+
