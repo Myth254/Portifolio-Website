@@ -201,13 +201,14 @@ html{
 
 #skills{
    height: 107vh;
+   align-items: center;
 }
 
 .skills__h4{
    color: teal;
    text-align: center;
    font-size: 1.6rem;
-
+   padding-top: 4.2rem;
 }
 
 .skills__list{
@@ -217,14 +218,12 @@ html{
    margin-top: 4rem;
    align-items: center;
    margin-left: 4rem;
-
    justify-content: space-evenly;
 }
 
 .skills__section{
    height: 18rem;
    width: 18rem;
-   margin-bottom: ;
    text-align: center;
    background-color:#a70f71;
    border-radius: 1.6rem;
@@ -239,7 +238,50 @@ html{
 
 .skills__section__h4{
    line-height: 1.6em;
-   color: rgb(129, 192, 192);
+   color: rgb(135, 224, 224);
+}
+
+hr{
+   margin-top: 8rem;
+}
+
+/* CONTACT */
+
+#contacts{
+   height: 50%;
+}
+
+.contacts__body{
+   text-align: center;
+   line-height: 1.8rem;
+   font-size: 1.2rem;
+   padding: 2rem;
+}
+
+.contacts__h4{
+   color: teal;
+   padding: 1.2rem;
+}
+
+.contacts__body .contacts__color{
+   color: rgb(69, 69, 251);
 }
 
 
+
+.To_top{
+   text-align: center;
+}
+
+.To_top a{
+   color: #9a33aa;
+   padding: 1.2rem;
+   text-align: center;
+   font-size: 1.2rem;
+   text-decoration: none;
+}
+
+.To_top a:hover{
+   text-decoration: underline;
+   color: rgb(188, 93, 114);
+}
