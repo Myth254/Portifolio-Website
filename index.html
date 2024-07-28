@@ -6,6 +6,7 @@
    <title>Portfolio Website</title>
    <link rel="stylesheet" href="Styles/style.css">
    <script src="https://kit.fontawesome.com/48ccc0d0be.js" crossorigin="anonymous"></script>
+   <script src="JS/tab-links.js"></script>
 </head>
 <body>
    <header id="header" class="header">
@@ -28,7 +29,7 @@
             <div>Ut cupiditate quaerat et eos totam vero quibusdam quos doloremque optio non eveniet officia, quia repudiandae minima tempore doloribus asperiores dolore magnam.Mollitia blanditiis culpa Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
          </div>
          <img class="profile_image" src="images/IMG_20231201_173555_Copy-removebg-preview (1).png"
-         height="375rem">
+         height="375em">
       </article>
 
       <article id="About">
@@ -89,10 +90,9 @@
 
    </main>
 
-   <hr>
-
    <footer>
       <article id="Contacts">
+         <hr>
          <div class="contacts__body">
             <h4 class="contacts__h4">CONTACT ME</h4>
             <div>Tel No.1: <span class="contacts__color">+254712345678</span></div>
@@ -107,27 +107,6 @@
    
       </article>
    </footer>
-
-
-
-   <script>
-
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-         for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-         }
-         for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab");
-      }
-
-   </script>
-
 
 </body>
 </html>

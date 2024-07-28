@@ -33,7 +33,7 @@ html{
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
-   height: 3.2em;
+   height: 3.2rem;
    background-color: #CA2C92;
    position: fixed;
    top: 0;
@@ -45,13 +45,13 @@ html{
 .header__h2{
    margin-bottom: 0.3em;
    text-align: center;
-   font-size: 1.8em;
-   letter-spacing: 0.1em;
+   font-size: 1.8rem;
+   letter-spacing: 0.1rem;
    font-family: sans-serif;
 }
 
 .header__h2 span{
-   font-size: 1.5em;
+   font-size: 1.5rem;
    color: rgb(211, 113, 0);
    font-family: sans-serif;
 }
@@ -66,15 +66,15 @@ html{
    display: flex;
    list-style-type: none;
    font-size: 1.2rem;
-   margin-left: -4em;
+   margin-left: -4rem;
 }
 
 .header__ul li{
-   padding: 0.8em 2.5em;
+   padding: 0.95rem 2.5rem;
 }
 
 .header__ul a{
-   letter-spacing: 0.05em;
+   letter-spacing: 0.05rem;
    text-decoration: none;
    color: var(--FONT-COLOR);
 }
@@ -98,7 +98,7 @@ html{
 
 .home__intro{
    flex-basis: 40%;
-   margin: 13em 6rem 0 8rem;
+   margin: 13rem 6rem 0 8rem;
    line-height: 1.5rem;
    
 }
@@ -107,19 +107,19 @@ html{
    color: teal;
    line-height: 2rem;
    font-size: 1.5rem;
-   padding-bottom: 0.2em;
+   padding-bottom: 0.2rem;
 }
 
 .home__h3{
    color: #CA2C92;
-   font-size: 2em;
+   font-size: 2rem;
    line-height: 2.4rem;
    padding-bottom: 0.2em;
 }
 
 .profile_image{
-   margin-top: 6.5em;
-   border-radius: 11em;
+   margin-top: 6.5rem;
+   border-radius: 11rem;
 }
 
 /* ABOUT */
@@ -130,13 +130,13 @@ html{
 }
 
 .about__img{
-   margin-top: 10em;
-   margin-left: 12em;
+   margin-top: 10rem;
+   margin-left: 12rem;
 }
 
 .about__body{
    flex-basis: 45%;
-   margin: 8em 4rem 0 6rem;
+   margin: 8rem 4rem 0 6rem;
    line-height: 1.5rem;
 }
 
@@ -153,7 +153,7 @@ html{
 
 .tab-links {
    margin-right: 5rem;
-   font-size: 1.1em;
+   font-size: 1.1rem;
    font-weight: 500;
    cursor: pointer;
    position: relative;
@@ -182,11 +182,11 @@ html{
 .tab-contents ul li span,
 .tab-contents ul li b{
    color: rgb(203, 47, 96);
-   font-size: 1em;
+   font-size: 1rem;
 }
 
 .tab-contents ul li b{
-   letter-spacing: 1em;
+   letter-spacing: 1rem;
 }
 
 .tab-contents {
@@ -233,7 +233,7 @@ html{
 .html_css_js_img,
 .c_cpp_img,
 .linux_img{
-   height: 8em;
+   height: 8rem;
 }
 
 .skills__section__h4{
@@ -284,4 +284,139 @@ hr{
 .To_top a:hover{
    text-decoration: underline;
    color: rgb(188, 93, 114);
+}
+
+
+/* --------------CSS FOR SMALL SCREENS--------------- */
+
+@media only screen and (max-width: 600px) {
+
+   html{
+      width: 87vw;
+      font-size: var(--FF);
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* HEADER */
+ .header{
+   height: 4.5em;
+ }
+
+ .header__h2{
+   font-size: 1.8em;
+   margin-left: -14rem;
+   padding-bottom: 0.6em;
+ }
+
+ .header__h2 b{
+   font-size: 1.4em;
+ }
+
+ .header__h2 span{
+   font-size: 2.3em;
+ }
+
+ .header__nav{
+   display: none;
+ }
+
+/* HOME */
+
+ .home__intro,.about__body{
+   margin: 24rem 0 0 2rem;
+   display: block;
+   flex-basis: 100%;
+   width: 80%;
+} 
+
+.home__intro div,
+.about__body p{
+   width: 23rem;
+}
+
+.about__body p{
+   margin-left: -1.1rem;
+}
+
+.profile_image{
+   display: block;
+   margin-top: 8rem;
+   border-radius: 11rem;
+   height: 15em;
+   margin-left: -19rem;
+}
+
+#About{
+   align-items: center;
+}
+
+.about__img{
+   margin-top: -70rem;
+   margin-left: 5rem;
+}
+
+.about__body{
+   margin-top: -23rem;
+   margin-left: -17.5rem;
+}
+
+#Skills{
+   margin-top: -28rem;
+}
+
+.hr{
+   width: 87vw;
+}
+
+#Contacts{
+   margin-left: 2rem;
+   width: 87vw;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+   html{
+      align-items: center;
+      justify-content: center;
+   }
+
+   .header__h2{
+      margin-left: -10rem;
+   }
+
+   .profile_image{
+      margin-left: -17.6em;
+   }
+
+   .about__img{
+      margin-top: -17em;
+   }
+   .about__body{
+      margin-top: 29rem;
+   }
+
+   .home__intro div,
+   .about__body p{
+      width: 20rem;
+      text-align: var(--FF);
+   }
+
+   .home__h4{
+      font-size: 1.2em;
+   }
+
+   .home__h3{
+      font-size: 1.6em;
+   }
+
+   #Skills{
+      margin-top: 4rem;
+   }
+
+   .skills__list{
+      margin-left: 2.8rem;
+   }
 }
