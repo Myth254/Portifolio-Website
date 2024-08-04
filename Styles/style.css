@@ -289,6 +289,94 @@ hr{
 
 /* --------------CSS FOR SMALL SCREENS--------------- */
 
+@media only screen and (max-width: 1280px)
+{
+   #header{
+      height: 4.2em;
+      justify-content: flex-start;
+   }
+
+   .header__h2{
+      margin-left: 2em;
+      font-size: 2.4em;
+      margin-bottom: 0.4em;
+   }
+
+   .header__h2 span{
+      font-size: 1.5em;
+   }
+
+   .header__h2 b{
+      font-size: 1.4em;
+   }
+
+   .header__nav{
+      display: none;
+   }
+
+   /* HOME */
+
+   
+   #Home{
+      height: 100%;
+      display: flex;
+   }
+
+   .home__intro{
+      flex-basis: 81%;
+      margin: 25rem 0 0 4em;
+      line-height: 1.5rem;
+      word-wrap:normal;
+   }
+
+   .profile_image{
+      margin-top: 8em;
+      margin-left: -25em;
+      border-radius: 11rem;
+   }
+
+   /* ABOUT */
+
+   
+#About{
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.about__img{
+   margin-top: 8rem;
+   margin-left: 9rem;
+   height: 18em;
+   width: 18em;
+}
+
+.about__body{
+   flex-basis: 100%;
+   margin: 5rem 4rem 0 6rem;
+   line-height: 1.5rem;
+}
+
+
+/* SKILLS */
+
+#Skills{
+   margin-left: -3.1em;
+   align-items: cente;
+}
+
+.skills__h4{
+   margin-left: 2em;
+}
+
+.skills__list{
+   display: flex;
+   flex-direction: column;
+}
+
+
+}
+
 @media only screen and (max-width: 600px) {
 
    html{
